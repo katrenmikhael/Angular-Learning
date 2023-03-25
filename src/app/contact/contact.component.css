@@ -1,0 +1,23 @@
+.header-line .line {
+  height: 6px;
+  width: 90px;
+}
+input,
+textarea {
+  outline: 0;
+  border-width: 0 0 1px;
+  border-color: rgb(173, 172, 172);
+  resize: none;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: rgb(173, 172, 172);
+}
+.floatingInputName,
+.floatingInputEmail,
+.floatingInputPhone,
+.floatingInputMessage {
+  display: none;
+}

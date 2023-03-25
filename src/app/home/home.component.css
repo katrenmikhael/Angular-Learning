@@ -1,0 +1,23 @@
+.home-sec .line {
+  height: 6px;
+  width: 100px;
+  background-color: white;
+}
+
+.home-sec .home-content .image {
+  width: 20%;
+  height: 20%;
+  padding: 60px;
+}
+/* .home-sec .home-content img {
+  width: 20%;
+  height: 20%;
+} */
+
+.home-sec .home-content h1 {
+  color: white;
+}
+.home-sec .home-content span {
+  font-weight: 500;
+  font-size: larger;
+}

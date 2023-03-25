@@ -1,0 +1,22 @@
+.navbar .nav-item a {
+  transition: color 0.2s;
+  font-size: larger;
+  color: white !important;
+}
+.navbar .nav-item a:hover {
+  color: #1abc9c !important;
+}
+
+.navbar {
+  height: 90px;
+}
+
+.textbiger {
+  font-size: xx-large;
+}
+
+.click-link {
+  background-color: #1abc9c !important;
+  color: white;
+  pointer-events: none;
+}

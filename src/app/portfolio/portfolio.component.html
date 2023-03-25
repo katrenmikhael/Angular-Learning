@@ -1,0 +1,111 @@
+<section class="protflio-sec ">
+  <div class="protiflio-header  color-main d-flex align-items-center ">
+    <div class="header-text">
+      <h2 class="color-main fs-1 fw-bolder mt-5">PORTFOLIO</h2>
+    </div>
+    <div class="header-line d-flex align-items-center">
+      <div class="line me-3 bg-main"></div>
+      <i class="fa-solid fa-star fs-3 color-main"></i>
+      <div class="line ms-3 bg-main"></div>
+    </div>
+  </div>
+  <div class="works mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 p-4" (click)="displayDetails($event,1)">
+          <div class="work position-relative rounded rounded-3 overflow-hidden">
+            <div class="image w-100 h-100 bg-danger" >
+              <img src="./assets/images/cabin.png"  alt="cabin-img" class="w-100">
+              <div class="layer  position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-plus text-white fw-bolder"></i>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-md-4 p-4" (click)="displayDetails($event,2)">
+          <div class="work position-relative rounded rounded-3 overflow-hidden">
+            <div class="image w-100 h-100 bg-danger">
+              <img src="./assets/images/cake.png"  alt="cake-img" class="w-100">
+            </div>
+            <div class="layer position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-plus text-white fw-bolder"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-4" (click)="displayDetails($event,3)">
+          <div class="work position-relative rounded rounded-3 overflow-hidden">
+            <div class="image w-100 h-100 bg-danger" >
+              <img src="./assets/images/circus.png"  alt="circus-img" class="w-100">
+            </div>
+            <div class="layer position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-plus text-white fw-bolder"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-4" (click)="displayDetails($event,4)">
+          <div class="work position-relative rounded rounded-3 overflow-hidden">
+            <div class="image w-100 h-100 bg-danger">
+              <img src="./assets/images/game.png"  alt="game-img" class="w-100">
+            </div>
+            <div class="layer position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-plus text-white fw-bolder"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-4" (click)="displayDetails($event,5)">
+          <div class="work position-relative rounded rounded-3 overflow-hidden">
+            <div class="image w-100 h-100 bg-danger" >
+              <img src="./assets/images/safe.png" alt="safe-img" class="w-100">
+            </div>
+            <div class="layer position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-plus text-white fw-bolder"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 p-4" (click)="displayDetails($event,6)">
+          <div class="work position-relative rounded rounded-3 overflow-hidden">
+            <div class="image w-100 h-100 bg-danger">
+              <img src="./assets/images/submarine.png" alt="submarine-img" class="w-100">
+            </div>
+            <div class="layer position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
+              <i class="fa-solid fa-plus text-white fw-bolder"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="dark-layer bg-dark bg-opacity-25 position-fixed top-0 bottom-0 end-0 start-0 w-100 h-100" id="layer-dark">
+      <div class="container d-flex justify-content-center">
+        <div class="work-container  bg-light w-75 h-100 my-4  p-5 rounded rounded-4">
+          <div class="work-header  color-main d-flex align-items-center text-center ">
+            <div class="header-text mt-3">
+              <h2 class="color-main fs-1 fw-bolder mt-5">{{caption}}</h2>
+            </div>
+            <div class="header-line d-flex align-items-center">
+              <div class="line me-3 bg-main"></div>
+              <i class="fa-solid fa-star fs-3 color-main"></i>
+              <div class="line ms-3 bg-main"></div>
+            </div>
+          </div>
+
+          <div class="work-img d-flex justify-content-center align-items-center mx-auto my-3  w-50 rounded rounded-3 overflow-hidden">
+            <img [src]="imgSrc" alt="work-img" class="w-100">
+          </div>
+          <div class="work-desc mx-auto my-5 w-50 text-center">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptas maxime saepe quod fuga beatae voluptatibus dolorum, ad nisi quidem sequi, nulla adipisci aliquid. Numquam fugiat laborum nemo architecto ab.</p>
+          </div>
+          <div class="close-btn w-100 text-center">
+            <button class="btn bg-second" (click)=" closeDetails()">
+              <i class="fa-solid fa-xmark me-2 text-white"></i>
+              <span class="text-white">Close Window</span>
+            </button>
+          </div>
+          <div class="close-icon">
+            <i class="fa-solid fa-xmark color-second" (click)=" closeDetails()"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
